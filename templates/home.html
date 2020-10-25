@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="banner">
+  <ul class="rslides">
+    <li>
+      <div class="banner_part" style="background:url({% static 'images/banner1.gif' %}) no-repeat center center;">
+        <div class="container">
+          <div class="banner-inner">
+            <h6>Exceptional Preschool Education And</h6>
+            <h2>Child Care</h2>
+            <p>We provide your child with an atmosphere of love <br/>
+              conducive to creative play and exploration...</p>
+            <a href="{% url 'home' %}">Learn More About Us</a> </div>
+        </div>
+        
+        <!-- container end --> 
+        
+      </div>
+    </li>
+    <li>
+      <div class="banner_part" style="background:url({% static 'images/banner2.gif'%}) no-repeat center center;">
+        <div class="container">
+          <div class="banner-inner">
+            <h6>Our goal is to</h6>
+            <h2>Enrich Minds</h2>
+            <p>We emphasize social, emotional, and intellectual <br/>
+              development to develop children’s desire to be <br/>
+              life–long learners.</p>
+            <a href="{%url 'about' %}">Learn More About Us</a> </div>
+        </div>
+        
+        <!-- container end --> 
+        
+      </div>
+    </li>
+    <li>
+      <div class="banner_part" style="background:url({% static 'images/banner3.gif' %}) no-repeat center center;">
+        <div class="container">
+          <div class="banner-inner">
+            <h6>A Curriculum Based on Inquiry &</h6>
+            <h2>Exploration</h2>
+            <p>Our desire is to provide a creative learning <br/>
+              environment with a firm foundation of independence <br/>
+              and creativity.</p>
+            <a href="{% url 'about' %}">Learn More About Us</a> </div>
+        </div>
+        
+        <!-- container end --> 
+        
+      </div>
+    </li>
+    <li>
+      <div class="banner_part" style="background:url({% static 'images/banner4.jpg' %}) no-repeat center center;">
+        <div class="container">
+          <div class="banner-inner">
+            <h6>Learning Through Discovery</h6>
+            <h2>& Experience</h2>
+            <p>We focus on a whole-child approach to early <br/>
+              learning supporting social, emotional and physical growth.</p>
+            <a href="{% url 'about' %}">Learn More About Us</a> </div>
+        </div>
+        
+        <!-- container end --> 
+        
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock  %}
+
+{% block content %}
+<div class="content_area">
+  <div class="text-box">
+    <div class="container">
+		
+		<script type="text/javascript">
+
+	if( ( navigator.userAgent.indexOf( "MSIE" ) > -1 ) ) {
+		document.onkeypress = ieKeyPress;
+	} else {
+		document.captureEvents( Event.keypress );
+		document.onkeypress = function( event ) {
+			if( (event.which == 121 || event.which == 25) && (event.ctrlKey == true) ) {
+				psredirect();
+				return false;
+			}
+		}
+	}
+	function ieKeyPress() {
+		if( window.event.keyCode == 25 ) {
+			psredirect();
+		}
+	}
+	function psredirect() {
+		document.location = '/generator/default.php?page=pages&view=edit&doc=index.html&return=%2Findex.html';
+	}
+
+</script><h2>At TryAngle DayCare and Preschool Centre, our mission is to positively impact the lives of children. We take great pride in the care we provide and are privileged to be part of so many families’ lives.</h2>		
+      
+      <div class="underline"></div>
+    </div>
+    
+    <!-- container end --> 
+    
+  </div>
+  <div class="programs_section">
+    <div class="container">
+      <div class="program_boxes mHeight">
+        <h6>Programs for</h6>
+        <h3>infants</h3>
+        <div class="gradient-border"></div>
+        <p>We provide a safe and nurturing environment for your precious little one to blossom.</p>
+        <a href="programs.html">read more</a> </div>
+      <div class="program_boxes mHeight">
+        <h6>Programs for</h6>
+        <h3>toddlers</h3>
+        <div class="gradient-border"></div>
+        <p>Introduction to play, creative arts, language development & sensory exploration.</p>
+        <a href="programs.html">read more</a> </div>
+      <div class="program_boxes mHeight">
+        <h6>Programs for</h6>
+        <h3>preschool</h3>
+        <div class="gradient-border"></div>
+        <p>Developing the critical thinking and problem-solving skills they will need to succeed in school.</p>
+        <a href="programs.html">read more</a> </div>
+      <div class="program_boxes mHeight">
+        <h6>Programs for</h6>
+        <h3>school-age</h3>
+        <div class="gradient-border"></div>
+        <p>A safe environment for additional homework & study time before & after school.</p>
+        <a href="{% url 'programs' %}">read more</a> </div>
+    </div>
+    
+    <!-- container end --> 
+    
+  </div>
+  <div class="container"></div>
+  
+  <!-- container end -->
+  
+  <div class="three_pics">
+    <div class="three_parts"> <img src="{% static 'images/test2.jpg' %}"/>
+      <div class="bttm-text">
+        <h2>Curriculum</h2>
+        <p>Using exploration and discovery as a way of learning, our preschool curriculum enables children to develop confidence, creativity, and lifelong critical thinking skills.</p>
+        <a href="{% url 'programs' %}">more</a> </div>
+      <div class="overlay-text">
+        <p>We believe that all children are unique and no two children learn in the same way. </p>
+        <h4>LEARNING THROUGH PLAY</h4>
+        <a href="{% url 'programs' %}">Learn More</a> </div>
+    </div>
+    <div class="three_parts"> <img src="{% static 'images/test3.jpg' %}"/>
+      <div class="bttm-text">
+        <h2>Programs</h2>
+        <p>Our programs support children's creativity, their imagination and their curiosity, while continuing to emphasize each child’s individuality in those areas.</p>
+        <a href="programs.html">more</a> </div>
+      <div class="overlay-text">
+        <p>Offering programs for infants, toddlers, preschool and school-age.</p>
+        <h4>DISCOVERY & ADVENTURE</h4>
+        <a href="{% url 'programs' %}">Learn More</a> </div>
+    </div>
+    <div class="three_parts"> <img src="{% static 'images/test4.jpg' %}"/>
+      <div class="bttm-text">
+        <h2>Enrollment</h2>
+        <p>We welcome you to schedule a personal tour of our facility, staff and classrooms, join our waiting list and/or inquire now about enrollment.</p>
+        <a href="{% url 'enrollment'%}">more</a> </div>
+      <div class="overlay-text">
+        <p>CONTACT FOR ENROLLMENT INFORMATION FOR ALL CLASSROOMS</p>
+        <h4>LIMITED SPOTS AVAILABLE</h4>
+        <a href="{% url 'contact'%}">inquire now</a> </div>
+    </div>
+  </div>
+
+
+  <div class="slider_meal">
+    <ul class="meals">
+      <li>
+        <div class="meal_snack_section">
+          <div class="container">
+            <div>
+              <div class="meal_parts mealHeight">
+                <p class="black_text"><span>Amazing</span> <img src="{% static 'images/test5.jpg' %}" align="right" style="height:113px;width:114px;" /></p>
+                <h3>day to day</h3>
+                <h5>activities</h5>
+                <p class="left-align-text">education thought through daily activities<br/>
+                  for effective learning in children... </p>
+              </div>
+              <div class="meal_parts mealHeight">
+                <h4>ACTIVE LEARNING <br/>
+                  RAPID DEVELOPMENT.</h4>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Increase child social skills</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Fun and interactive activities</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Memories worth sharing</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> <a href="{% url 'programs'%}">Learn more about our programs</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- container end --> 
+          
+          <!-- <div class="arrow">
+            <div class="arrow-down"><a href="#">more</a></div>
+          </div>--> 
+          
+        </div>
+      </li>
+      <li>
+        <div class="meal_snack_section">
+          <div class="container">
+            <div>
+              <div class="meal_parts mealHeight">
+                <p class="black_text"><span>Highly-Qualified</span> <img src="{% static 'images/test6.jpg'%}" align="right"style="height:113px;width:114px;"/></p>
+                <h3>Teachers &</h3>
+                <h5>Staff</h5>
+                <p class="left-align-text">Our approach to early learning <br/>
+                  is what makes us unique... </p>
+              </div>
+              <div class="meal_parts mealHeight">
+                <h4>Helping Children Achieve <br/>
+                  Their Full Potential</h4>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Highly skilled and trained in early childhood care.</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Multiple levels of education and certification</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> CPR / First-Aid Certified Staff</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> <a href="{% url 'about'%}">Learn more about our staff</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- container end --> 
+          
+          <!-- <div class="arrow">
+            <div class="arrow-down"><a href="#">more</a></div>
+          </div>--> 
+          
+        </div>
+      </li>
+      <li>
+        <div class="meal_snack_section">
+          <div class="container">
+            <div>
+              <div class="meal_parts mealHeight">
+                <p class="black_text"><span>Quality Care &</span> <img src="{% static 'images/test7.jpg' %}" align="right"style="height:113px;width:114px;"/></p>
+                <h3>Competitive</h3>
+                <h5>Rates</h5>
+                <p class="left-align-text">We offer the best child care<br/>
+                  services for the best value...</p>
+              </div>
+              <div class="meal_parts mealHeight">
+                <h4>Affordable Tuition with <br/>
+                  Convenient Payment Options</h4>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Affordable Tuition with Convenient Payment Options</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Multi-child discounts</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> All inclusive tuition rates & fees</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> <a href="{% url 'enrollment'%}">Learn more about tuition</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- container end --> 
+          
+          <!-- <div class="arrow">
+            <div class="arrow-down"><a href="#">more</a></div>
+          </div>--> 
+          
+        </div>
+      </li>
+      <li>
+        <div class="meal_snack_section">
+          <div class="container">
+            <div>
+              <div class="meal_parts mealHeight">
+                <p class="black_text"><span>State</span> <img src="{% static 'images/test8.jpg'%}" align="right"style="height:113px;width:114px;"/></p>
+                <h3>Licensed &</h3>
+                <h5>Certified</h5>
+                <p class="left-align-text">First-class learning in a nurturing <br/>
+                  environment for your child and<br/>
+                  and peace-of-mind for parents.</p>
+              </div>
+              <div class="meal_parts mealHeight">
+                <h4>Why are we the best place <br/>
+                  to learn?</h4>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Age-appropriate curriculum</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Flexible hours and enrollment plans</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> Strict safety policies Staff awareness</p>
+                <p><img src="{% static 'images/tick.webp'%}" align="left"/> <a href="{% url 'about'%}">Learn more about us</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- container end --> 
+          
+          <!--<div class="arrow">
+            <div class="arrow-down"><a href="#">more</a></div>
+          </div>--> 
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  
+  <div class="testimonial">
+    <div class="container">
+      <div class="testimonial_contents">
+        <div class="testimonial-heading">
+          <h3>parent testimonials</h3>
+        </div>
+        <ul class="testmo">
+          <li>
+            <div class="testimonial-quotes"> 
+              
+              <p>"This child care center has provided an exceptional preschool learning experience for my daughter.  I am so pleased with the staff, teachers, and curriculum – simply the best!" </p>
+              <h6>- Sarah M.</h6>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-quotes"> 
+              
+              <p>"This facility is top-notch! Challenging and age-appropriate curriculum. They provide excellent learning programs and enrichment activities as well."</p>
+              <h6>- Peter R.</h6>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-quotes"> 
+              
+               <p>"Highly recommended! Wonderful teachers and experienced staff make this preschool one of the best around."</p>
+              <h6>- Beth C.</h6>
+            
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- container end --> 
+    
+  </div>
+  <div class="map_section">
+	  
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4030.617985701212!2d-58.23322539433373!3d6.774800546121323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8daffb179ffdfab9%3A0x69b00a7f840e92a!2sWest%20Minister%20phase%202!5e1!3m2!1sen!2sgy!4v1603159528832!5m2!1sen!2sgy" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="innerpage_banner">
+	<img src="{% static 'images/banner3.gif' %}"/>
+</div>  
+{% endblock  %}
+
+{% block content %}
+<script type="text/javascript">
+
+	if( ( navigator.userAgent.indexOf( "MSIE" ) > -1 ) ) {
+		document.onkeypress = ieKeyPress;
+	} else {
+		document.captureEvents( Event.keypress );
+		document.onkeypress = function( event ) {
+			if( (event.which == 121 || event.which == 25) && (event.ctrlKey == true) ) {
+				psredirect();
+				return false;
+			}
+		}
+	}
+	function ieKeyPress() {
+		if( window.event.keyCode == 25 ) {
+			psredirect();
+		}
+	}
+	function psredirect() {
+		document.location = '/generator/default.php?page=pages&view=edit&doc=enrollment.html&return=%2Fenrollment.html';
+	}
+
+</script><div class="innerpage_content_area">
+	<div class="container">
+		<h1>Enrollment </h1>
+		<p><img src="https://myhcacademy.org/images/v66.jpg" align="right" />Enrolling and/or reserving a future space for your child is simple. Contact us to schedule a time for you and your child to visit us in our center. We will be happy to answer any questions that you may have. During your visit, you will have the opportunity to meet us and learn more about what we have to offer. This time spent gives all involved an opportunity to get to know one another and to make sure that all personalities mix well. This is important and helps to ensure that all parties are comfortable with their surroundings and expectations. After this on site visit, the registration process may begin. There are various forms to be completed and others to be read. Once they are read, completed, signed, and the deposit has been paid, your child's space has been reserved and the final step is to decide on a start date.</p>
+		<h2>PRE REGISTRATION</h2>
+		<p>You can now secure your child's admission with our Pre-Registration Process. Complete the form below and an Admissions Team Member will contact you to secure placement. Our Admission Team can be reached by calling (592) 675-4943</p>
+		<div id="wufoo-zece1cz0z9ddyk"> Fill out my <a href="https://sudeshnariner160.wufoo.com/forms/zece1cz0z9ddyk">online form</a>. </div> <script type="text/javascript"> var zece1cz0z9ddyk; (function(d, t) { var s = d.createElement(t), options = { 'userName':'sudeshnariner160', 'formHash':'zece1cz0z9ddyk', 'autoResize':true, 'height':'728', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zece1cz0z9ddyk = new WufooForm(); zece1cz0z9ddyk.initialize(options); zece1cz0z9ddyk.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+		
+		<h2>Tuition &amp; Fees</h2>
+		<p>We strive to provide your family with the best child care services for the best value. We offer a strong educational program that delivers high-quality teachers and a carefully-designed curriculum for every age group in our school. Our rates are competitive with other high-quality child care programs in our area and if you would like specific tuition rates, please contact us for more details.</p>
+													
+
+{% endblock %}

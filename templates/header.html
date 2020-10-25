@@ -1,0 +1,38 @@
+{% load static %}
+<header class="header">
+
+		<div class="top-header">
+		  <div class="container">
+			<div class="top-parts">
+			  <p><a href="contact.html"><i class="fa fa-map-marker"></i> 4241 West Minister, West Bank Demerara</a></p>
+			</div>
+			<div class="top-parts">
+			  <p> <i class="fa fa-envelope-o"></i> Email: <a href="mailto:hollycaesar@hotmail.com">hollycaesar@hotmail.com</a></p>
+			  <p> <i class="fa fa-phone"></i> Call: <a href="tel:592-675-4943">(+592) 675-4943</a></p>
+			  <a href="https://www.facebook.com/TryAngle-Daycare-Preschool-Centre-227567711050036/?ref=page_internal" target="_blank"><span class="social-details"><i class="fa fa-facebook"></i></span></a> 
+			</div>
+		  </div>
+		  <!-- container end --> 
+		</div>
+	  
+	  
+	  <!--top-header-->
+	  <div class="menu_logo_part">
+		<div class="container">
+		  <div class="logo_header"> <a href="{% url 'home' %}"><img src="{% static 'images/test1.png'%}" class="logoLft" ></a> </div>
+		  <div class="menu-part">
+			<nav>
+			  <ul id="menu">
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'about' %}">About</a></li>
+				<li><a href="{% url 'programs' %}"> Programs</a></li>
+				<li><a href="{% url 'enrollment' %}">Enrollment</a></li>
+				<li><a href="{% url 'parents' %}">For Parents</a></li>
+				<li><a href="{% url 'gallery' %}">Gallery</a></li>
+				<li><a href="{% url 'contact' %}">Contact Us</a></li>
+			  </ul>
+			</nav>
+		  </div>
+		</div>
+		<!-- container end --> 
+	  </div>

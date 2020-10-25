@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width:1170px){
+.three_parts img{ width:100% !important }
+.three_parts .overlay-text{ display:none !important }
+.three_parts:hover .bttm-text{ display:block; z-index:99999; }
+
+.contactLeft{ float:left; width:100%; padding:0 0 30px 0; box-sizing:border-box; }
+.contactRight{ float:right; width:100%; }
+.contactRight h2{  text-align:center; }
+.contactRight ul.contactFrm{ margin:0 auto; padding:0; display:block; width:100%; max-width:400px; }
+
+
+}
+@media (max-width:767px){ 
+body{ height:1000px;}
+/*--------------------------------------------header & banner starts------------------------------------------------------*/
+/*.header{ margin-top:50px;}*/
+.header{ width:100%; background:#; background-size:cover;  padding:0px 0;position: relative !important;top: 0px;left: 0;z-index: 999; -webkit-transition: height 0.3s;-moz-transition: height 0.3s;-ms-transition: height 0.3s;-o-transition: height 0.3s; transition: height 0.3s; min-height:134px;}
+header.smaller {height:auto; top:0px; }
+.top-parts{ width:100%; float:none; text-align:center;}
+.top-parts:nth-last-of-type(2){ text-align:center;}
+.top-parts:nth-last-of-type(1){ text-align:center;}
+.top-parts p{ display:block; margin-bottom:7px;}
+
+.logo_header{ width:100%; float:none; overflow:hidden; padding:0px 0; text-align:center;}
+
+.menu-part{ width:100%; float:none; text-align:right; padding:0px 0px;}
+.menu-part nav {display: none; }
+.js #menu { display:none; }
+.js .slicknav_menu { display:block; }
+
+.banner_part{ width:100%; background-size:cover; padding:20px 0 0; height: auto; margin-top:0px;}
+.banner-inner{  background:#; padding:0px 0 20px 5px;}
+.banner-inner h2{font-size:33px;}
+.banner-inner p{ font-size:16px;}
+.banner a.prev, .banner a.next{ top:65%;}
+
+.innerpage_banner{ width:100%;margin-top:0px; height:auto;}
+/*--------------------------------------------content_area starts------------------------------------------------------*/
+.content_area{ width:100%; }
+
+.text-box h2{ padding:0 20px 50px;}
+
+.program_boxes{ width:100%; float:none; margin:10px 0;}
+.program_boxes:nth-last-of-type(4) h3, .program_boxes:nth-last-of-type(4) h6, .program_boxes:nth-last-of-type(4) a, .program_boxes:nth-last-of-type(4) p{ padding-left:20px;}
+.program_boxes:nth-last-of-type(4) .gradient-border{ margin-left:20px;}
+
+.meal_parts{ width:100%; float:none; margin-bottom:30px;}
+.meal_parts:nth-last-of-type(2){ text-align:left; position:relative;}
+.black_text img{ margin-top:-45px !important;}
+.left-align-text{ text-align:left; position:relative; right:0px; left:0; padding-left:0 !important;}
+.meal_parts h4, .meal_parts p{ padding-left:0 !important;}
+
+.testimonial-heading{ width:342px; height:80px; background:url(../images/testi_heading_bg.png) repeat-y; margin-left:0px; max-width:100%; }
+.testimonial-quotes{ width:100%; margin-left:0px;}
+
+.three_parts{ width:100%; display:block; float:none; height:300px;}
+.bttm-text{ bottom:0;}
+.overlay-text{ padding-top:60px; top:0; bottom:0;}
+.overlay-text h4{ padding:0 40px 20px;}
+.overlay-text a{ padding:0 0; line-height:0;}
+
+
+/*--------------------------------------------------------------footer part starts---------------------------------------------------------*/
+
+.footer{ width:100%; } 
+
+.footer-social, .footer_menu, .footer_details, .footer_right{ width:100%; max-width:100%; text-align:center; margin:10px auto;}
+
+
+
+.footer_menu h6, .footer_details h6{ padding-left:0px;}
+.footer_menu ul{padding:0 0 0 0px;}
+.footer_details p{ padding-left:0px;}
+
+.btn_staff button{ float:none; display:inline-block;}
+.btn_parent button{ float:none; display:inline-block;}
+
+ul.slicknav_nav li a i.fa-caret-down{ display:none; }  
+
+
+.meal_parts h3, .meal_parts h5{ font-size:30px; line-height:40px; }
+p.black_text img[align="right"]{ width:auto; height:90px; margin-top:-50px !important; margin-right:-20px !important }
+
+
+}
+
+@media (min-width:768px) and (max-width:991px){ 
+
+/*--------------------------------------------header & banner starts------------------------------------------------------*/
+.header{}
+.top-parts:nth-last-of-type(1){ width:70%;}
+.top-parts:nth-last-of-type(2){ width:30%;}
+
+.logo_header{ width:20%;}
+.logo_header img{ max-width:100%;}
+.menu-part{ width:80%;}
+.menu-part nav ul li{ font-size:14px;}
+.menu-part nav ul a { margin:0 0px;}
+
+.banner_part{ margin-top:80px;}
+.banner-inner{  background:#; padding:10px 0 50px 85px;}
+.banner a.prev, .banner a.next{ top:30%;}
+
+.innerpage_banner{ width:100%;margin-top:80px;}
+/*--------------------------------------------content_area starts------------------------------------------------------*/
+
+.content_area{ width:100%; }
+
+.program_boxes{ width:50%; float:left; margin:10px auto; max-width: 100%;}
+
+.program_boxes:nth-last-of-type(2) h3, .program_boxes:nth-last-of-type(2) h6, .program_boxes:nth-last-of-type(2) .gradient-border, .program_boxes:nth-last-of-type(2) a{ padding-left:0px; margin-left:0;}
+ .program_boxes:nth-last-of-type(2) p{ padding-right:40px; margin-left:0; padding-left:0;}
+.overlay-text{ padding-top:8px;}
+.overlay-text h4{ padding:0 0 20px;}
+.overlay-text a{ padding:0 0; line-height:0;}
+
+/*--------------------------------------------------------------footer part starts---------------------------------------------------------*/
+
+.footer{ width:100%; }
+.footer_details{ width:23%; }
+.footer_menu{ margin-right:0px; width:20%; }
+.footer_menu ul, .footer_menu h6{ padding:0 0 0 10px;}
+.footer_details p, .footer_details h6{ padding-left:0px;}
+.btn_staff button{ margin-right:0; margin-bottom:20px; float:right;}
+.footer_social_icons a i{ padding:5px 3px;}
+.footer_social_icons a .fa-facebook{ padding:5px 5px;}
+}
+
+@media (min-width:992px) and (max-width:1199px){ 
+
+/*--------------------------------------------header & banner starts------------------------------------------------------*/
+.header{}
+.menu-part nav ul a { margin:0 9px;}
+
+.banner_part{ margin-top:93px;}
+.banner-inner{  background:#; padding:20px 0 50px 85px;}
+.banner a.prev, .banner a.next{ top:40%;}
+
+.innerpage_banner{ width:100%;margin-top:93px;}
+/*--------------------------------------------content_area starts------------------------------------------------------*/
+
+.content_area{ width:100%; }
+
+.overlay-text{ padding-top:89px;}
+.overlay-text h4{ padding:0 40px 20px;}
+.overlay-text a{ padding:0 0; line-height:0;}
+
+/*--------------------------------------------------------------footer part starts---------------------------------------------------------*/
+
+.footer{ width:100%; } 
+.footer_menu{ margin-right:0px;}
+.footer_menu h6{ padding-left:50px;}
+.footer_menu ul{ margin:0; padding:0 0 0 50px;}
+.btn_staff button{ margin-right:0; margin-bottom:20px; float:right;}
+}
+
+@media (min-width:1200px){ 
+
+.container{width:1170px; background:transparent; padding:0px 15px; margin:0 auto; height:auto;}
+
+/*--------------------------------------------header & banner starts------------------------------------------------------*/
+.header{}
+.slicknav_menu { display:none; }
+
+/*--------------------------------------------content_area starts------------------------------------------------------*/
+
+.content_area{ width:100%; }
+
+.program_boxes{ margin-right:45px;}
+.program_boxes:nth-last-of-type(1), .program_boxes:nth-last-of-type(4){ margin-right:0;}
+.program_boxes:nth-last-of-type(3) h6, .program_boxes:nth-last-of-type(2) h6, .program_boxes:nth-last-of-type(1) h6{ padding-left:40px;}
+.program_boxes:nth-last-of-type(3) h3, .program_boxes:nth-last-of-type(2) h3 ,.program_boxes:nth-last-of-type(1) h3{ padding-left:40px;}
+.program_boxes:nth-last-of-type(3) .gradient-border, .program_boxes:nth-last-of-type(2) .gradient-border, .program_boxes:nth-last-of-type(1) .gradient-border{margin-left:40px;}
+.program_boxes:nth-last-of-type(3) p, .program_boxes:nth-last-of-type(2) p, .program_boxes:nth-last-of-type(1) p{ padding-left:40px;}
+.program_boxes:nth-last-of-type(3) a, .program_boxes:nth-last-of-type(2) a, .program_boxes:nth-last-of-type(1) a{ padding-left:40px; }
+
+.three_parts img{ width:100%;}
+
+/*--------------------------------------------------------------footer part starts---------------------------------------------------------*/
+
+.footer{ width:100%; } 
+
+}

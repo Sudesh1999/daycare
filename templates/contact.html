@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="innerpage_banner">
+	<img src="{% static 'images/banner1.gif' %}"/>
+</div>  
+{% endblock  %}
+
+{% block content %}
+<div class="innerpage_content_area">
+	<div class="container">
+		
+		<script type="text/javascript">
+
+	if( ( navigator.userAgent.indexOf( "MSIE" ) > -1 ) ) {
+		document.onkeypress = ieKeyPress;
+	} else {
+		document.captureEvents( Event.keypress );
+		document.onkeypress = function( event ) {
+			if( (event.which == 121 || event.which == 25) && (event.ctrlKey == true) ) {
+				psredirect();
+				return false;
+			}
+		}
+	}
+	function ieKeyPress() {
+		if( window.event.keyCode == 25 ) {
+			psredirect();
+		}
+	}
+	function psredirect() {
+		document.location = '/generator/default.php?page=pages&view=edit&doc=contact.html&return=%2Fcontact.html';
+	}
+
+</script><div class="contactLeft">
+	<h1>Contact Us</h1>
+	<p>7 N. Tuxedo Ave<br />
+		Chattanooga, TN 37411 </p>
+	<h3>Telephone number: 423-781-0900<br />
+		<br />
+		E-mail: <a href="mailto:Info@myhcacademy.org">Info@myhcacademy.org</a></h3>
+	<div class="mapContact">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.5428564960607!2d-85.23897968380557!3d35.018146973656044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8860672410dad8cf%3A0x9f8de7c07314fab9!2sHope+City+Church!5e0!3m2!1sen!2sus!4v1560789503856!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe></div></div>     
+	  <div class="contactRight">
+   	  <h2>Inquiries / Request a Tour</h2>
+      <p style="color:#F00"></p>
+      <!--enter comment form here -->
+      </div>
+	</div>
+    
+</div>
+{% endblock %}

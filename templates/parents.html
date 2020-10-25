@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block banner %}
+<div class="innerpage_banner">
+	<img src="{% static 'images/banner4.jpg' %}"/>
+</div>  
+{% endblock  %}
+
+{% block content %}
+<script type="text/javascript">
+
+	if( ( navigator.userAgent.indexOf( "MSIE" ) > -1 ) ) {
+		document.onkeypress = ieKeyPress;
+	} else {
+		document.captureEvents( Event.keypress );
+		document.onkeypress = function( event ) {
+			if( (event.which == 121 || event.which == 25) && (event.ctrlKey == true) ) {
+				psredirect();
+				return false;
+			}
+		}
+	}
+	function ieKeyPress() {
+		if( window.event.keyCode == 25 ) {
+			psredirect();
+		}
+	}
+	function psredirect() {
+		document.location = '/generator/default.php?page=pages&view=edit&doc=for-parents.html&return=%2Ffor-parents.html';
+    }
+    
+</script><div class="innerpage_content_area">
+	<div class="container">
+		<h1><img src="{% static 'https://myhcacademy.org/images/v69.jpg' %}" align="right" />For Parents</h1>
+		<h2>Nutrition</h2>
+		<p>We know that good nutrition contributes to effective learning in children. Numerous studies have demonstrated that eating breakfast regularly will boost your child's ability to learn, to think quickly, to pay attention and even to get along with others. One recent study on childhood nutrition found that those who eat breakfast raise their math grades and improve their school attendance records. Children who regularly have breakfast in the morning solve problems more easily and are less likely to be restless or irritable before lunch. Other studies indicate that skipping breakfast has a negative effect on attentiveness, verbal fluency, memory and the brain's ability to make use of new information.</p>
+		<h2>Calendar &amp; Schedule</h2>
+		<p>Coming soon </p></div></div>    
+<!-- content_area end -->
+{% endblock %}

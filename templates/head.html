@@ -1,0 +1,129 @@
+{% load static %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>TryAngle DayCare </title>
+<!-- Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Custom CSS -->
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive_styles.css' %}" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Mobile MENU -->
+<link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+<script src="{% static 'js/modernizr.min.js' %}" type="text/javascript"></script> 
+<!--<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>--> 
+<script src="{% static 'js/jquery.slicknav.js' %}" type="text/javascript"></script> 
+
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script> 
+<!-- Mobile MENU -->
+<!-- Home Page Slider -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+<link href="{% static 'css/responsiveslides.css' %}" rel="stylesheet" type="text/css" />
+<script src="{% static 'js/responsiveslides.js' %}" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	$(".rslides").responsiveSlides({
+	auto: true,             // Boolean: Animate automatically, true or false
+	speed: 500,            	// Integer: Speed of the transition, in milliseconds
+	timeout: 7000,          // Integer: Time between slide transitions, in milliseconds
+	pager: true,            // Boolean: Show pager, true or false
+	nav: true,            	// Boolean: Show navigation, true or false
+	random: false,          // Boolean: Randomize the order of the slides, true or false
+	pause: false,           // Boolean: Pause on hover, true or false
+	pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+	prevText: "Previous",   // String: Text for the "previous" button
+	nextText: "Next",       // String: Text for the "next" button
+	maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+	navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+	manualControls: "",     // Selector: Declare custom pager navigation
+	namespace: "rslides",   // String: Change the default namespace used
+	before: function(){},   // Function: Before callback
+	after: function(){}     // Function: After callback
+});
+});
+</script>
+<!-- Home Page Slider -->
+<!-- meal Slider -->
+<script type="text/javascript">
+$(function() {
+	$(".meals").responsiveSlides({
+	auto: true,             // Boolean: Animate automatically, true or false
+	speed: 500,            	// Integer: Speed of the transition, in milliseconds
+	timeout: 7000,          // Integer: Time between slide transitions, in milliseconds
+	pager: false,            // Boolean: Show pager, true or false
+	nav: true,            	// Boolean: Show navigation, true or false
+	random: false,          // Boolean: Randomize the order of the slides, true or false
+	pause: false,           // Boolean: Pause on hover, true or false
+	pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+	prevText: "Previous",   // String: Text for the "previous" button
+	nextText: "Next",       // String: Text for the "next" button
+	maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+	navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+	manualControls: "",     // Selector: Declare custom pager navigation
+	namespace: "rslides",   // String: Change the default namespace used
+	before: function(){},   // Function: Before callback
+	after: function(){}     // Function: After callback
+});
+});
+</script>
+<!-- Testmonials Slider -->
+<!-- Testmonials Slider -->
+<script type="text/javascript">
+$(function() {
+	$(".testmo").responsiveSlides({
+	auto: true,             // Boolean: Animate automatically, true or false
+	speed: 500,            	// Integer: Speed of the transition, in milliseconds
+	timeout: 7000,          // Integer: Time between slide transitions, in milliseconds
+	pager: false,            // Boolean: Show pager, true or false
+	nav: true,            	// Boolean: Show navigation, true or false
+	random: false,          // Boolean: Randomize the order of the slides, true or false
+	pause: false,           // Boolean: Pause on hover, true or false
+	pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+	prevText: "Previous",   // String: Text for the "previous" button
+	nextText: "Next",       // String: Text for the "next" button
+	maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+	navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+	manualControls: "",     // Selector: Declare custom pager navigation
+	namespace: "rslides",   // String: Change the default namespace used
+	before: function(){},   // Function: Before callback
+	after: function(){}     // Function: After callback
+});
+});
+</script>
+<!-- Testmonials Slider -->
+<script src="{% static 'js/jquery.matchHeight-min.js' %}" type="text/javascript"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/classie.js' %}" type="text/javascript"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>	
